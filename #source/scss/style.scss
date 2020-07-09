@@ -1,0 +1,607 @@
+$open: "Open Sans", sans-serif;
+$orange: #eeb501;
+$brown: #1e0404;
+
+body {
+    font-family: $open;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: black;
+    background-image: url("../images/header/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 28px;
+    padding-bottom: 100px;
+    &__top {
+        margin-bottom: 70px;
+    }
+
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 35px;
+    }
+
+    &__slogan {
+        font-family: $open;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+    }
+
+    &__menu-btn {
+        display: none;
+        width: 50px;
+        height: 50px;
+        border: 1px solid white;
+        cursor: pointer;
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+    &__btn-line {
+        height: 2px;
+        width: 30px;
+        background-color: white;
+    }
+    &__menu-list {
+        display: flex;
+    }
+
+    &__list-item {
+        margin-right: 32px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        font-family: $open;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
+        transition: all 0.5s;
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    &__content {
+        max-width: 1350px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    &__content-inner {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    &__iron-img {
+        position: absolute;
+        top: 8px;
+        left: 0;
+    }
+
+    &__text {
+        text-align: right;
+        width: 45%;
+    }
+
+    &__title {
+        font-size: 69px;
+        font-weight: 800;
+        line-height: 80px;
+        margin-bottom: 35px;
+    }
+
+    &__creative {
+        display: block;
+        font-size: 144px;
+        line-height: 120px;
+        color: $orange;
+        letter-spacing: -6px;
+    }
+
+    &__subtitle {
+        line-height: 36px;
+        letter-spacing: 1px;
+    }
+
+    &__btn {
+        margin-right: 10px;
+        margin-top: 77px;
+        &:hover {
+            border-color: $orange;
+            color: $orange;
+        }
+    }
+}
+.btn {
+    display: inline-block;
+    border: 3px solid white;
+    padding: 17px 41px;
+    font-family: $open;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.5s;
+}
+.skills {
+    padding-top: 66px;
+    padding-bottom: 118px;
+    background-image: url("../images/skills/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $brown;
+    &__inner {
+        display: flex;
+    }
+    &__presentation {
+        padding-top: 104px;
+        max-width: 360px;
+        margin-right: 91px;
+    }
+    &__subtitle {
+        padding-left: 7px;
+        font-weight: 800;
+        font-size: 43px;
+        line-height: 72px;
+    }
+    &__title {
+        font-size: 65px;
+        font-weight: 800;
+        line-height: 60px;
+        color: white;
+    }
+    &__title-word {
+        padding: 0 18px 7px 5px;
+        display: inline-block;
+        margin-bottom: 7px;
+        background-color: $orange;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 300px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+        &:nth-child(even) {
+            margin-right: 0;
+        }
+        &:nth-child(3),
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-circle {
+        width: 90px;
+        height: 90px;
+        background-color: $orange;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item-title {
+        margin-top: 19px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    &__item-description {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+.portfolio {
+    padding-top: 101px;
+    padding-bottom: 61px;
+    background-image: url("../images/portfolio/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__inner {
+        text-align: center;
+    }
+    &__subtitle {
+        margin-bottom: 15px;
+    }
+    &__title {
+        margin-bottom: 63px;
+    }
+
+    &__description {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+    &__item {
+        float: left;
+        &:first-child {
+            margin-right: 25px;
+        }
+        &:nth-child(3) {
+            float: right;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__btn {
+        margin-top: 42px;
+        &:hover {
+            border-color: black;
+            color: black;
+        }
+    }
+}
+.subtitle {
+    font-size: 29px;
+    font-style: italic;
+    font-weight: 400;
+}
+.title {
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 50px;
+    position: relative;
+    &::after {
+        content: "";
+        background-image: url("../images/team/element.png");
+        width: 32px;
+        height: 10px;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0px;
+    }
+    .portfolio &::after {
+        bottom: -33px;
+        background-image: url("../images/portfolio/element.png");
+    }
+    .team &::after {
+        bottom: -24px;
+    }
+    .testimonials &::after {
+        bottom: -39px;
+    }
+    .clients &::after {
+        bottom: -24px;
+    }
+    .footer &::after {
+        bottom: -28px;
+    }
+}
+
+.team {
+    color: $brown;
+    background-image: url("../images/team/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 82px;
+    padding-top: 102px;
+    &__inner {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        margin-bottom: 75px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        min-height: 590px;
+    }
+
+    &__item {
+        height: 503px;
+        &:nth-child(odd) {
+            align-self: flex-end;
+        }
+    }
+
+    &__item-name {
+        margin-top: 35px;
+        margin-bottom: 9px;
+        font-size: 29px;
+        font-weight: 800;
+    }
+
+    &__item-profession {
+        font-size: 22px;
+        line-height: 27px;
+        color: #4f4f4f;
+    }
+}
+
+.testimonials {
+    background-image: url("../images/testimonials/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 133px;
+    padding-bottom: 142px;
+    &__inner {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin-bottom: 77px;
+    }
+
+    &__quote {
+        font-size: 25px;
+        font-style: italic;
+        line-height: 32px;
+        margin-bottom: 35px;
+        position: relative;
+        &::before {
+            content: "";
+            background-image: url("../images/testimonials/quotation-marks1.png");
+            width: 57px;
+            height: 39px;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 28px;
+        }
+        &::after {
+            content: "";
+            background-image: url("../images/testimonials/quotation-marks2.png");
+            width: 56px;
+            height: 39px;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 36px;
+        }
+    }
+
+    &__person-name {
+        font-size: 29px;
+        line-height: 30px;
+        font-weight: 800;
+        color: $orange;
+        margin-bottom: 4px;
+        margin-top: 18px;
+    }
+
+    &__person-profession {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+}
+
+.clients {
+    background-image: url("../images/clients/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    padding-top: 94px;
+    padding-bottom: 100px;
+    &__inner {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        color: $brown;
+        margin-bottom: 72px;
+    }
+
+    &__description {
+        display: inline-block;
+        max-width: 890px;
+        color: #434343;
+        font-size: 20px;
+        margin-bottom: 61px;
+    }
+
+    &__logo-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 290px;
+        border-right: 1px solid #a3a3a3;
+        &:nth-child(4),
+        &:nth-child(8) {
+            border-right: none;
+        }
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            padding-bottom: 40px;
+        }
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+            border-top: 1px solid #a3a3a3;
+            padding-top: 30px;
+        }
+    }
+}
+
+.footer {
+    background-image: url("../images/footer/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 113px;
+    padding-bottom: 65px;
+    &__inner {
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 23px;
+    }
+
+    &__title {
+        margin-bottom: 52px;
+    }
+
+    &__description {
+        font-size: 20px;
+        margin-bottom: 67px;
+    }
+
+    &__message-title {
+        font-size: 29px;
+        line-height: 1.5;
+        font-weight: 700;
+        margin-bottom: 32px;
+        margin-top: 45px;
+    }
+
+    &__message-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__input {
+        width: 378px;
+        background-color: #2e2e2e;
+        padding: 20px 17px;
+        font-family: $open;
+        font-size: 17px;
+        font-weight: 400;
+        color: #adadad;
+        margin-bottom: 23px;
+        &::placeholder {
+            font-family: $open;
+            font-size: 17px;
+            font-weight: 400;
+            color: #adadad;
+        }
+    }
+    &__message-text {
+        resize: none;
+        height: 62px;
+        width: 981px;
+        background-color: #2e2e2e;
+        padding: 19px 17px;
+        font-family: $open;
+        font-size: 17px;
+        font-weight: 400;
+        color: #adadad;
+        &::placeholder {
+            font-family: $open;
+            font-size: 17px;
+            font-weight: 400;
+            color: #adadad;
+        }
+    }
+
+    &__button {
+        border: 3px solid white;
+        background-color: transparent;
+        font-family: $open;
+        font-size: 22px;
+        font-weight: 700px;
+        color: white;
+        text-transform: uppercase;
+        width: 171px;
+        transition: all 0.5s;
+        &:hover {
+            border-color: $orange;
+            color: $orange;
+        }
+    }
+
+    &__contact-items {
+        display: inline-flex;
+        margin-top: 58px;
+    }
+
+    &__item-link {
+        width: 57px;
+        height: 57px;
+        background-color: $orange;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 22px;
+        transition: transform 0.5s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+    &__info {
+        margin-top: 41px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    &__address {
+        display: inline;
+        font-style: normal;
+    }
+
+    &__phone-link {
+        color: white;
+    }
+    &__mail-link {
+        color: white;
+    }
+
+    &__copyright {
+        margin-top: 60px;
+        border-top: 6px solid $orange;
+        padding-top: 61px;
+    }
+}
