@@ -53,6 +53,7 @@
         }
 
         &__item {
+            animation-name: none;
             height: auto;
             width: 35%;
             &:nth-child(1),
@@ -81,6 +82,9 @@
             }
             padding: 30px 0;
         }
+        &__item-img{
+            animation: none;
+        }
     }
 }
 
@@ -97,11 +101,13 @@
             position: relative;
             top: 108px;
             left: 0;
+            animation: none;
         }
         &__text {
             width: 100%;
             text-align: center;
             padding-right: 0;
+            animation: none;
         }
         &__btn {
             margin-top: 40px;
@@ -120,6 +126,12 @@
             padding-top: 20px;
             margin-right: 0;
             margin-bottom: 60px;
+        }
+        &__subtitle {
+            padding-left: 0;
+        }
+        &__title-word {
+            padding: 0 5px 7px 5px;
         }
         &__items {
             justify-content: space-evenly;

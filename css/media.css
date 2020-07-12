@@ -54,6 +54,8 @@
     justify-content: space-evenly;
   }
   .team__item {
+    -webkit-animation-name: none;
+    animation-name: none;
     height: auto;
     width: 35%;
   }
@@ -80,6 +82,10 @@
   .clients__item:nth-child(3), .clients__item:nth-child(4) {
     border-top: 1px solid #a3a3a3;
   }
+  .clients__item-img {
+    -webkit-animation: none;
+    animation: none;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -99,11 +105,15 @@
     position: relative;
     top: 108px;
     left: 0;
+    -webkit-animation: none;
+    animation: none;
   }
   .header__text {
     width: 100%;
     text-align: center;
     padding-right: 0;
+    -webkit-animation: none;
+    animation: none;
   }
   .header__btn {
     margin-top: 40px;
@@ -126,6 +136,12 @@
     padding-top: 20px;
     margin-right: 0;
     margin-bottom: 60px;
+  }
+  .skills__subtitle {
+    padding-left: 0;
+  }
+  .skills__title-word {
+    padding: 0 5px 7px 5px;
   }
   .skills__items {
     -webkit-box-pack: space-evenly;

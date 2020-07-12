@@ -578,7 +578,7 @@ body {
         &:last-child {
             margin-right: 0;
         }
-        &:hover{
+        &:hover {
             transform: rotate(360deg);
         }
     }
@@ -603,5 +603,19 @@ body {
         margin-top: 60px;
         border-top: 6px solid $orange;
         padding-top: 61px;
+    }
+}
+
+.animate__fadeInRightBig {
+    animation-delay: 1s;
+}
+
+.fadeInDown {
+    animation-delay: 0.7s;
+}
+
+@for $i from 1 to 10 {
+    .clients__item:nth-child(#{$i}) .fadeIn {
+        animation-delay: 0s+$i/2;
     }
 }

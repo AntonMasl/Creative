@@ -762,3 +762,58 @@ body {
   border-top: 6px solid #eeb501;
   padding-top: 61px;
 }
+
+.animate__fadeInRightBig {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.fadeInDown {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.clients__item:nth-child(1) .fadeIn {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.clients__item:nth-child(2) .fadeIn {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.clients__item:nth-child(3) .fadeIn {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.clients__item:nth-child(4) .fadeIn {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.clients__item:nth-child(5) .fadeIn {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.clients__item:nth-child(6) .fadeIn {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.clients__item:nth-child(7) .fadeIn {
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+.clients__item:nth-child(8) .fadeIn {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.clients__item:nth-child(9) .fadeIn {
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
